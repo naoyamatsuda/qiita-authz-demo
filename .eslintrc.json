@@ -1,0 +1,42 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "airbnb-base"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "arrow-body-style": "error",
+    "arrow-parens": "error",
+    "arrow-spacing": "error",
+    "eqeqeq": "error",
+    "generator-star-spacing": "error",
+    "import/prefer-default-export": "off",
+    "no-duplicate-imports": "error",
+    "no-eq-null": "error",
+    "no-undefined": "error",
+    "no-useless-computed-key": "error",
+    "no-useless-constructor": "error",
+    "no-useless-rename": "error",
+    "no-var": "error",
+    "object-shorthand": "error",
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "prefer-template": "error",
+    "require-jsdoc": "off",
+    "rest-spread-spacing": "error",
+    "semi": ["error", "never", { "beforeStatementContinuationChars": "never" }],
+    "template-curly-spacing": "error",
+    "yield-star-spacing": "error",
+    "valid-jsdoc": "off"
+  }
+}
