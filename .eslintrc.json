@@ -13,6 +13,7 @@
     "ecmaVersion": 2018
   },
   "rules": {
+    "comma-dangle": ["error", "never"],
     "arrow-body-style": "error",
     "arrow-parens": "error",
     "arrow-spacing": "error",
@@ -37,6 +38,7 @@
     "semi": ["error", "never", { "beforeStatementContinuationChars": "never" }],
     "template-curly-spacing": "error",
     "yield-star-spacing": "error",
-    "valid-jsdoc": "off"
+    "valid-jsdoc": "off",
+    "indent": ["error", 2, { "MemberExpression": "off" }]
   }
 }
