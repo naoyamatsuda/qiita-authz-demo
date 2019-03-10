@@ -37,6 +37,7 @@
     "semi": ["error", "never", { "beforeStatementContinuationChars": "never" }],
     "template-curly-spacing": "error",
     "yield-star-spacing": "error",
-    "valid-jsdoc": "off"
+    "valid-jsdoc": "off",
+    "indent": ["error", 2, { "MemberExpression": "off" }]
   }
 }
