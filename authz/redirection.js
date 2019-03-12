@@ -21,7 +21,7 @@ module.exports = async (req, res) => {
       url: 'https://qiita.com/api/v2/items/a7ff1be7905d45b530c1/like',
       headers: { Authorization: `Bearer ${responseToken.data.token}` }
     })
-      .then(response => res.status(response.status).end())
+      .then(response => res.status(response.status).send('<h1>まつだの記事をいいねしたお</h1>'))
       .catch(() => res.status(res.status).end())
   }
   return res.status(200).end()
