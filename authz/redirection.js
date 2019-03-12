@@ -11,9 +11,9 @@ module.exports = async (req, res) => {
       code: req.query.code
     },
     validateStatus(status) {
-      return status === 201
+      return status < 500
     }
-  }).catch(() => res.status(500).end)
+  })
 
   if (responseToken.status === 201) {
     axios({
@@ -23,6 +23,7 @@ module.exports = async (req, res) => {
     })
       .then(response => res.status(response.status).send('<h1>まつだの記事をいいねしたお</h1>'))
       .catch(() => res.status(res.status).end())
+    return res
   }
-  return res.status(200).end()
+  return res.status(responseToken.status).send('<h1>想定していないエラーが発生したみたい</h1>')
 }
